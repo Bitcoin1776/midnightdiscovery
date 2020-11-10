@@ -1,2 +1,2 @@
 # midnightdiscovery
-midnightdiscoerywebsite
+midnightdiscoverywebsite
