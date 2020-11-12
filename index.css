@@ -2,6 +2,7 @@
 body,
 html {
     overflow-x: hidden;
+    margin: 0;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
@@ -17,4 +18,10 @@ html {
 }
 .honeypotField {
     display: none;
+}
+@media screen and (orientation: portrait) {
+    iframe {
+        width: 95vw;
+        height: 30vh;
+    }
 }
