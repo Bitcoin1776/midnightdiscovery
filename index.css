@@ -28,4 +28,8 @@ html {
         width: 95vw;
         height: 30vh;
     }
+    img {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
 }
