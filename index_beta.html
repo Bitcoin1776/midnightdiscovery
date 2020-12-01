@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" href="./index.css">
+        <style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form--inline .submit { margin-left: 15px; } .btcpay-form--block select { margin-bottom: 10px; } .btcpay-form .btcpay-custom-container{ text-align: center; }.btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 60px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { -moz-appearance: none; -webkit-appearance: none; appearance: none; color: currentColor; background: transparent; border:1px solid transparent; display: block; padding: 1px; margin-left: auto; margin-right: auto; font-size: 11px; cursor: pointer; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } #btcpay-input-price::-webkit-outer-spin-button, #btcpay-input-price::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } </style>
+<style type="text/css"> input[type=range].btcpay-input-range { -webkit-appearance:none; width:100%; background: transparent; } input[type=range].btcpay-input-range:focus { outline:0; } input[type=range].btcpay-input-range::-webkit-slider-runnable-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-webkit-slider-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; -webkit-appearance:none; margin-top:-9.45px } input[type=range].btcpay-input-range:focus::-webkit-slider-runnable-track { background:#fff; } input[type=range].btcpay-input-range::-moz-range-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-moz-range-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; } input[type=range].btcpay-input-range::-ms-track { width:100%; height:3.1px; cursor:pointer; background:0 0; border-color:transparent; color:transparent; } input[type=range].btcpay-input-range::-ms-fill-lower { background:#e6e6e6; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-fill-upper { background:#f3f3f3; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; height:3.1px; } input[type=range].btcpay-input-range:focus::-ms-fill-lower { background:#f3f3f3; } input[type=range].btcpay-input-range:focus::-ms-fill-upper { background:#fff; } </style>
    </head>
 
     <body>
@@ -19,7 +21,7 @@
         <!--DO NOT DELETE-->
         <noscript>Please enable JavaScript. JavaScript is required to use this</noscript>
         <section data-aos="fade" class="hero is-dark is-medium" id="frontHero">
-            <div class="hero-body" style="background-image: url('https://midnightdiscovery.org/img/background.jpg');">
+            <div class="hero-body">
                 <div class="container">
                     <h1 class="title is-size-2" data-aos="fade-right">
                         <a href="./index.html">Midnight Discovery</a>
@@ -59,30 +61,51 @@
             </div>
         </nav>
         <main class="has-text-centered">
-		<div align="center">
-                Support Midnight Discovery by using <b><a href="https://smile.amazon.com/ch/82-0634090">Amazon Smile</a></b>.
-		<br><br>
-                Make a tax-deductible donation using Bitcoin!
-		<br>
-                Please claim these donations (in email) to receive a completed receipt suitable 
-		<br>
-                for supporting your tax deduction, include your name, address, email, and tx id
-		<br>
-		(And reference the donation is for tax year 2020, if making in 2021).
-		<br>
-                <br>
-                <b>Midnight.7300272@gmail.com</b>
+            <div>
                 <br />
-		Or make an anonymous mysterious donation,<br>
-		if Itemized deductions aren't your thing ;)
-                <br><br>
-                Bitcoin (<b><a href="https://blockstream.info/address/bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp">BTC Coins</a></b>)
+                <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbymUK3xIbKP3f0igYqGNtmFBMcFt8jHn8CLzJNWxmLsb0Tryf0/exec">
+                    <div>
+                        <fieldset style="border-style:none;">
+                            <input id="email" name="email" type="email" style="border-color:gray;" value="" required placeholder="your_email@yahoo.com">
+                        </fieldset>
+                        <fieldset class="honeypot-field" style="display:none;">
+                            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                            <input id="honeypot" type="text" name="honeypot" value="">
+                        </fieldset>
+                        <br />
+                        <b><button class="button" type="submit">Sign Up</button></b>
+                    </div>
+                    <br />
+                    <div class="thankyou_message" style="display:none;">
+                        <h2>Thank you for signing up!</h2>
+                    </div>
+                </form>
                 <br />
-                <b>bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp</b>
-		<br><br>
-
-           <style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form--inline .submit { margin-left: 15px; } .btcpay-form--block select { margin-bottom: 10px; } .btcpay-form .btcpay-custom-container{ text-align: center; }.btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 60px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { -moz-appearance: none; -webkit-appearance: none; appearance: none; color: currentColor; background: transparent; border:1px solid transparent; display: block; padding: 1px; margin-left: auto; margin-right: auto; font-size: 11px; cursor: pointer; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } #btcpay-input-price::-webkit-outer-spin-button, #btcpay-input-price::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } </style>
-<style type="text/css"> input[type=range].btcpay-input-range { -webkit-appearance:none; width:100%; background: transparent; } input[type=range].btcpay-input-range:focus { outline:0; } input[type=range].btcpay-input-range::-webkit-slider-runnable-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-webkit-slider-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; -webkit-appearance:none; margin-top:-9.45px } input[type=range].btcpay-input-range:focus::-webkit-slider-runnable-track { background:#fff; } input[type=range].btcpay-input-range::-moz-range-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-moz-range-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; } input[type=range].btcpay-input-range::-ms-track { width:100%; height:3.1px; cursor:pointer; background:0 0; border-color:transparent; color:transparent; } input[type=range].btcpay-input-range::-ms-fill-lower { background:#e6e6e6; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-fill-upper { background:#f3f3f3; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; height:3.1px; } input[type=range].btcpay-input-range:focus::-ms-fill-lower { background:#f3f3f3; } input[type=range].btcpay-input-range:focus::-ms-fill-upper { background:#fff; } </style>
+                <p style="margin-right: 10vw; margin-left: 10vw;">
+                        Support Midnight Discovery by using <b><a href="https://smile.amazon.com/ch/82-0634090">Amazon Smile</a></b>.
+                    <br>
+                    <br>
+                            Make a tax-deductible donation using Bitcoin!
+                    <br>
+                            Please claim these donations (in email) to receive a completed receipt suitable 
+                    <br>
+                            for supporting your tax deduction, include your name, address, email, and tx id
+                    <br>
+                            (And reference the donation is for tax year 2020, if making in 2021).
+                    <br>
+                    <br>
+                            <b>Midnight.7300272@gmail.com</b>
+                            <br />
+                            Or make an anonymous mysterious donation,<br>
+                            if Itemized deductions aren't your thing ;)
+                            <br><br>
+                            Bitcoin (<b><a href="https://blockstream.info/address/bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp">BTC Coins</a></b>)
+                            <br />
+                            <b>bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp</b>
+                    <br>
+                    <br>
+                </p>
+            </div>
 <form method="POST"  action="https://btcpay.midnightdiscovery.org/api/v1/invoices" class="btcpay-form btcpay-form--block">
   <input type="hidden" name="storeId" value="9qWydv9qT4ttGvq12PeQBbkKZ86X35k1zCKkWRUWVKwr" />
   <input type="hidden" name="checkoutDesc" value="Tax Deductible Donation" />
@@ -99,7 +122,7 @@
   <input type="image" class="submit" name="submit" src="https://btcpay.midnightdiscovery.org/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
 		</form>
 	
-            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 <br />
                 <br />                
                 Midnight Discovery's mission is to foster a relationship between modern internet technologies and us. We strive to bolster the average person's life
@@ -117,7 +140,7 @@
                 <br />   
                 <br />
             	</p>
-            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px"> 
+            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;"> 
                 In 2015, we began the experiment of taking a young person in a difficult situation, and getting them into coding. The idea was that if we could prevent,
                 or reduce, the years spent working in service, retail, or manual labor, then we could cost-effectively accelerate happiness within society.
                 <br />
@@ -131,12 +154,12 @@
                 </figure> 
             	</p>
 		<br>
-            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
-		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
+		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw;">
                 First we began by buying him a chrome book, and motivating him to code. Then we paid him $100 for completing assignments. $100 is a lot to a kid who has
                 no source of income, and whose parents cannot spare $20.
 		</h2>
-   		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+   		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 It worked. He began to take to HTML and felt proud of his accomplishments. By 16 he was performing useful work, creating webpages, mastering Linux,
                 and solving coding challenges in Bitcoin. He was given Benjamin Franklin's Autobiography, The Way to Wealth, Thomas Paine's Rights of Man,
                 the Four Hour Workweek, and Mastering Bitcoin. He never read them. He was also issued a dry erase board with a calendar to keep track of schedules,
@@ -171,10 +194,10 @@
                 the opportunity.
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw;">
                 But our program is a step by step process.
 		</h2>
-		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
 		Step 1 was introducing him into the development of a valuable skill at a young age, where small sums of money
                 purchase large amounts of motivation, where time is free and expectations minimal. Step 2 is designing a basic start at life, while dodging catastrophe.
                 For him, this means coding, but we also work in finance, media, legal, and medicine – and generally speaking all business under the sun.
@@ -194,7 +217,7 @@
                 <img src="https://i.imgur.com/4xKdra8.jpg" loading="lazy" class="has-image-centered has-ratio" style="max-width:750px; max-height:350px;">
             	</figure>
 		<br>
-    		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+    		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 While he was programming he was earning $30 to $50 an hour. In retail, it was 5 bucks after tax. With programming he had to balance his own schedule,
                 but in retail that ‘burden’ was taken from him. Programming is difficult after nights of partying, but in retail few care so long as one maintains
                 two legs for standing. Yet, eventually the difficult, higher paying task won out, after months of working 30 hour weeks only to realize he was left with nothing.
@@ -230,7 +253,7 @@
                 <img src="./img/cam_car.jpg" loading="lazy" class="has-image-centered has-ratio" style="max-width:750px; max-height:350px;">
             	</figure>
 		<br>
-		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 And it so happens, knowingly, he will need to work while undergoing his technical training, and understanding his proclivities, we have set up a
                 part-time position at a marijuana farm in Michigan, with an excellent mentor and a band of artistic and expressive comrades. Such a thing is only
                 possible through our network of contacts and our unique skills. We offer counseling, money, business development, and specialized talent. Our contacts
@@ -252,19 +275,19 @@
                 self-reliance, communal problem solving, and perseverance through mental anguish.
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw;">
                 It was not easy, but you are not doing anyone a favor when you fail to understand their reality.
                 </h2>
-		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 This is capitalism, with a deep commitment to the social good. Developing youths quickly and cost-effectively, building them up to obtain high-tier jobs
                 and ownership, helping them to accelerate the growth of large families, businesses, and millions of investments. Our aspirations are high,
                 but in each child I fear we could succeed. Leading one to wonder, how much have we wasted?
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw;">
                 Midnight Discovery is an extension of the American dream, the pursuit of happiness.
                 </h2>
-		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 If you would like to hire Cam to build your website, help you go virtual, or setup a BTCPay server, you can do so at: www.camerondaycustomwebsites.net.
                 <br />
                 <br />
@@ -280,11 +303,11 @@
                 Thank you so much for your time, and dream of a hope filled life. It is a gift we give to each other. Learn and prosper,
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw;">
                 Midnight Discovery, a 501(c)3 non-profit corporation,<br>
 		headquartered in Knoxville, Tennessee, home of the Volunteers.
                 </h2>
-            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+            	<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 After thoughts; but for those curious at 18 it does not end.
                 <br />
                 <br />
@@ -300,7 +323,7 @@
                 as one.
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<h2 class="title is-size-5" style="margin-right: 10vw; margin-left: 10vw;">
                 “She was the love of his youth, the inspiration of his manhood, a gallant courageous colonial and revolutionary patriot. Her descendants number many:
                 notably leaders of men.”
 		<br>
@@ -310,53 +333,51 @@
 		<br><br>
 		First wife of Governor John Sevier (1746-1780).
                 </h2>
-		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
+		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw;">
                 <figure data-aos="fade-right" class="image container">
                     <img src="./img/IMG_7753.jpg" loading="lazy" class="has-image-centered has-ratio" style="max-width: 450px; max-height: 350px;">
                 </figure>
                 <br />
-		<p class="has-text-justified" style="margin-right: 10vw; margin-left: 10vw; max-width:600px">
-
-                Support Midnight Discovery by using <b><a href="https://smile.amazon.com/ch/82-0634090">Amazon Smile</a></b>.
-                <br />
-                <br />
-                Mail donations to the 501(c)3 non-profit, payable to: 
-                <br />
-                <b>Midnight Discovery, Inc</b>
-                <br />
-                2500 Sutherland Ave
-                <br />
-                Knoxville, TN 37919              
-                <br />
-                <br />
-                Include your name, address, and email to receive a completed receipt, suitable for supporting your tax deduction.
-                <br />
-                <br />
-                Make a tax-deductible donation using Bitcoin!
-                <br />
-                Please claim these donations (in email) before they go public :D
-                <br />
-                <b>Midnight.7300272@gmail.com</b>
-                <br />
-                <br />
-                Bitcoin (<b><a href="https://blockstream.info/address/bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp">BTC Coins</a></b>)
-                <br />
-                <b>bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp</b>
-                <br />
-                <br />
-                Get a website, go virtual, and accept Bitcoin with BTCPay: <b><a href="https://camerondaycustomwebsites.net/">Cameron Day</a></b>.
-                <br />
-                <br />
-                For tax, investment, and business services, contact: <b><a href="https://www.barnettecpa.com/">Keller Barnette, CPA</a></b>. 
-                <br />
-                <br />
-                Thank you, have a great day =D
+        </p>
+        <div class="has-text-centered">
+            <p class="has-text-centered" style="margin-right: 10vw; margin-left: 10vw;">
+                    Support Midnight Discovery by using <b><a href="https://smile.amazon.com/ch/82-0634090">Amazon Smile</a></b>.
+                    <br />
+                    <br />
+                    Mail donations to the 501(c)3 non-profit, payable to: 
+                    <br />
+                    <b>Midnight Discovery, Inc</b>
+                    <br />
+                    2500 Sutherland Ave
+                    <br />
+                    Knoxville, TN 37919              
+                    <br />
+                    <br />
+                    Include your name, address, and email to receive a completed receipt, suitable for supporting your tax deduction.
+                    <br />
+                    <br />
+                    Make a tax-deductible donation using Bitcoin!
+                    <br />
+                    Please claim these donations (in email) before they go public :D
+                    <br />
+                    <b>Midnight.7300272@gmail.com</b>
+                    <br />
+                    <br />
+                    Bitcoin (<b><a href="https://blockstream.info/address/bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp">BTC Coins</a></b>)
+                    <br />
+                    <b>bc1qatrc5ay9t0ja6yz9uk8ew2gcqrrdarj0x4l2tp</b>
+                    <br />
+                    <br />
+                    Get a website, go virtual, and accept Bitcoin with BTCPay: <b><a href="https://camerondaycustomwebsites.net/">Cameron Day</a></b>.
+                    <br />
+                    <br />
+                    For tax, investment, and business services, contact: <b><a href="https://www.barnettecpa.com/">Keller Barnette, CPA</a></b>. 
+                    <br />
+                    <br />
+                    Thank you, have a great day =D
             </p>
+        </div>
             <br />
-		</div>
-
-           <style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form--inline .submit { margin-left: 15px; } .btcpay-form--block select { margin-bottom: 10px; } .btcpay-form .btcpay-custom-container{ text-align: center; }.btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 60px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { -moz-appearance: none; -webkit-appearance: none; appearance: none; color: currentColor; background: transparent; border:1px solid transparent; display: block; padding: 1px; margin-left: auto; margin-right: auto; font-size: 11px; cursor: pointer; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } #btcpay-input-price::-webkit-outer-spin-button, #btcpay-input-price::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } </style>
-<style type="text/css"> input[type=range].btcpay-input-range { -webkit-appearance:none; width:100%; background: transparent; } input[type=range].btcpay-input-range:focus { outline:0; } input[type=range].btcpay-input-range::-webkit-slider-runnable-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-webkit-slider-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; -webkit-appearance:none; margin-top:-9.45px } input[type=range].btcpay-input-range:focus::-webkit-slider-runnable-track { background:#fff; } input[type=range].btcpay-input-range::-moz-range-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-moz-range-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; } input[type=range].btcpay-input-range::-ms-track { width:100%; height:3.1px; cursor:pointer; background:0 0; border-color:transparent; color:transparent; } input[type=range].btcpay-input-range::-ms-fill-lower { background:#e6e6e6; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-fill-upper { background:#f3f3f3; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; height:3.1px; } input[type=range].btcpay-input-range:focus::-ms-fill-lower { background:#f3f3f3; } input[type=range].btcpay-input-range:focus::-ms-fill-upper { background:#fff; } </style>
 <form method="POST"  action="https://btcpay.midnightdiscovery.org/api/v1/invoices" class="btcpay-form btcpay-form--block">
   <input type="hidden" name="storeId" value="9qWydv9qT4ttGvq12PeQBbkKZ86X35k1zCKkWRUWVKwr" />
   <input type="hidden" name="checkoutDesc" value="Tax Deductible Donation" />
@@ -402,7 +423,7 @@
         <br />
         <br />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script data-cfasync="false" type="text/javascript" src="./formHandler.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="./js/formHandler.js"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>
