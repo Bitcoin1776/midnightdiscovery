@@ -10,6 +10,29 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" href="./index.css">
+        <style>
+            @media screen and (orientation: portrait) {
+                iframe {
+                    width: 95vw;
+                    height: 30vh;
+                }
+                img {
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                }
+                p {
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                    margin-right: 5vw;
+                }
+            }
+            @media screen and (orientation: landscape) {
+                p {
+                    padding-right: 20vw;
+                    padding-left: 20vw;
+                }
+            }
+        </style>
         <style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form--inline .submit { margin-left: 15px; } .btcpay-form--block select { margin-bottom: 10px; } .btcpay-form .btcpay-custom-container{ text-align: center; }.btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 60px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { -moz-appearance: none; -webkit-appearance: none; appearance: none; color: currentColor; background: transparent; border:1px solid transparent; display: block; padding: 1px; margin-left: auto; margin-right: auto; font-size: 11px; cursor: pointer; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } #btcpay-input-price::-webkit-outer-spin-button, #btcpay-input-price::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } </style>
 <style type="text/css"> input[type=range].btcpay-input-range { -webkit-appearance:none; width:100%; background: transparent; } input[type=range].btcpay-input-range:focus { outline:0; } input[type=range].btcpay-input-range::-webkit-slider-runnable-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-webkit-slider-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; -webkit-appearance:none; margin-top:-9.45px } input[type=range].btcpay-input-range:focus::-webkit-slider-runnable-track { background:#fff; } input[type=range].btcpay-input-range::-moz-range-track { width:100%; height:3.1px; cursor:pointer; box-shadow:0 0 1.7px #020,0 0 0 #003c00; background:#f3f3f3; border-radius:1px; border:0; } input[type=range].btcpay-input-range::-moz-range-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; } input[type=range].btcpay-input-range::-ms-track { width:100%; height:3.1px; cursor:pointer; background:0 0; border-color:transparent; color:transparent; } input[type=range].btcpay-input-range::-ms-fill-lower { background:#e6e6e6; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-fill-upper { background:#f3f3f3; border:0; border-radius:2px; box-shadow:0 0 1.7px #020,0 0 0 #003c00; } input[type=range].btcpay-input-range::-ms-thumb { box-shadow:none; border:2.5px solid #cedc21; height:22px; width:22px; border-radius:50%; background:#0f3723; cursor:pointer; height:3.1px; } input[type=range].btcpay-input-range:focus::-ms-fill-lower { background:#f3f3f3; } input[type=range].btcpay-input-range:focus::-ms-fill-upper { background:#fff; } </style>
    </head>
@@ -41,6 +64,9 @@
             </a>
             <div class="navbar-menu " id="navbarMenu">
                 <div class="navbar-end">
+                    <a class="navbar-item" href="./join.html">
+                        Join
+                    </a>
                     <a class="navbar-item" href="./bitcoin.html">
                         Bitcoin
                     </a>
@@ -81,7 +107,7 @@
                     </div>
                 </form>
                 <br />
-                <p style="margin-right: 20vw; margin-left: 20vw;">
+                <p>
                         Support Midnight Discovery by using <b><a href="https://smile.amazon.com/ch/82-0634090">Amazon Smile</a></b>.
                     <br>
                     <br>
@@ -122,7 +148,7 @@
   <input type="image" class="submit" name="submit" src="https://btcpay.midnightdiscovery.org/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
 		</form>
 	
-            	<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+            	<p class="has-text-justified">
                 <br />
                 <br />                
                 Midnight Discovery's mission is to foster a relationship between modern internet technologies and us. We strive to bolster the average person's life
@@ -140,7 +166,7 @@
                 <br />   
                 <br />
             	</p>
-            	<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;"> 
+            	<p class="has-text-justified"> 
                 In 2015, we began the experiment of taking a young person in a difficult situation, and getting them into coding. The idea was that if we could prevent,
                 or reduce, the years spent working in service, retail, or manual labor, then we could cost-effectively accelerate happiness within society.
                 <br />
@@ -154,12 +180,12 @@
                 </figure> 
             	</p>
 		<br>
-            	<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
-		<h2 class="title is-size-5" style="margin-right: 20vw; margin-left: 20vw;">
+            	<p class="has-text-justified">
+		<h2 class="title is-size-5">
                 First we began by buying him a chrome book, and motivating him to code. Then we paid him $100 for completing assignments. $100 is a lot to a kid who has
                 no source of income, and whose parents cannot spare $20.
 		</h2>
-   		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+   		<p class="has-text-justified">
                 It worked. He began to take to HTML and felt proud of his accomplishments. By 16 he was performing useful work, creating webpages, mastering Linux,
                 and solving coding challenges in Bitcoin. He was given Benjamin Franklin's Autobiography, The Way to Wealth, Thomas Paine's Rights of Man,
                 the Four Hour Workweek, and Mastering Bitcoin. He never read them. He was also issued a dry erase board with a calendar to keep track of schedules,
@@ -194,10 +220,10 @@
                 the opportunity.
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 20vw; margin-left: 20vw;">
+		<h2 class="title is-size-5">
                 But our program is a step by step process.
 		</h2>
-		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+		<p class="has-text-justified">
 		Step 1 was introducing him into the development of a valuable skill at a young age, where small sums of money
                 purchase large amounts of motivation, where time is free and expectations minimal. Step 2 is designing a basic start at life, while dodging catastrophe.
                 For him, this means coding, but we also work in finance, media, legal, and medicine – and generally speaking all business under the sun.
@@ -217,7 +243,7 @@
                 <img src="https://i.imgur.com/4xKdra8.jpg" loading="lazy" class="has-image-centered has-ratio" style="max-width:750px; max-height:350px;">
             	</figure>
 		<br>
-    		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+    		<p class="has-text-justified">
                 While he was programming he was earning $30 to $50 an hour. In retail, it was 5 bucks after tax. With programming he had to balance his own schedule,
                 but in retail that ‘burden’ was taken from him. Programming is difficult after nights of partying, but in retail few care so long as one maintains
                 two legs for standing. Yet, eventually the difficult, higher paying task won out, after months of working 30 hour weeks only to realize he was left with nothing.
@@ -253,7 +279,7 @@
                     <img src="./img/cam_car.jpg" loading="lazy" class="has-image-centered has-ratio" style="max-width:750px; max-height:350px;">
             	</figure>
 		<br>
-		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+		<p class="has-text-justified">
                 And it so happens, knowingly, he will need to work while undergoing his technical training, and understanding his proclivities, we have set up a
                 part-time position at a marijuana farm in Michigan, with an excellent mentor and a band of artistic and expressive comrades. Such a thing is only
                 possible through our network of contacts and our unique skills. We offer counseling, money, business development, and specialized talent. Our contacts
@@ -275,19 +301,19 @@
                 self-reliance, communal problem solving, and perseverance through mental anguish.
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 20vw; margin-left: 20vw;">
+		<h2 class="title is-size-5">
                 It was not easy, but you are not doing anyone a favor when you fail to understand their reality.
                 </h2>
-		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+		<p class="has-text-justified">
                 This is capitalism, with a deep commitment to the social good. Developing youths quickly and cost-effectively, building them up to obtain high-tier jobs
                 and ownership, helping them to accelerate the growth of large families, businesses, and millions of investments. Our aspirations are high,
                 but in each child I fear we could succeed. Leading one to wonder, how much have we wasted?
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 20vw; margin-left: 20vw;">
+		<h2 class="title is-size-5">
                 Midnight Discovery is an extension of the American dream, the pursuit of happiness.
                 </h2>
-		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+		<p class="has-text-justified">
                 If you would like to hire Cam to build your website, help you go virtual, or setup a BTCPay server, you can do so at: www.camerondaycustomwebsites.net.
                 <br />
                 <br />
@@ -303,11 +329,11 @@
                 Thank you so much for your time, and dream of a hope filled life. It is a gift we give to each other. Learn and prosper,
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 20vw; margin-left: 20vw;">
+		<h2 class="title is-size-5">
                 Midnight Discovery, a 501(c)3 non-profit corporation,<br>
 		headquartered in Knoxville, Tennessee, home of the Volunteers.
                 </h2>
-            	<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+            	<p class="has-text-justified">
                 After thoughts; but for those curious at 18 it does not end.
                 <br />
                 <br />
@@ -323,7 +349,7 @@
                 as one.
                 <br />
                 <br />
-		<h2 class="title is-size-5" style="margin-right: 20vw; margin-left: 20vw;">
+		<h2 class="title is-size-5">
                 “She was the love of his youth, the inspiration of his manhood, a gallant courageous colonial and revolutionary patriot. Her descendants number many:
                 notably leaders of men.”
 		<br>
@@ -333,14 +359,14 @@
 		<br><br>
 		First wife of Governor John Sevier (1746-1780).
                 </h2>
-		<p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+		<p class="has-text-justified">
                 <figure data-aos="fade-right" class="image container">
                     <img src="./img/IMG_7753.jpg" loading="lazy" class="has-image-centered has-ratio" style="max-width: 450px; max-height: 350px;">
                 </figure>
                 <br />
         </p>
         <div class="has-text-centered">
-            <p class="has-text-centered" style="margin-right: 20vw; margin-left: 20vw;">
+            <p class="has-text-centered">
                     Support Midnight Discovery by using <b><a href="https://smile.amazon.com/ch/82-0634090">Amazon Smile</a></b>.
                     <br />
                     <br />

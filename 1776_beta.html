@@ -7,6 +7,29 @@
         <meta name="description" content="Learn and Prosper">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./index.css">
+        <style>
+            @media screen and (orientation: portrait) {
+                iframe {
+                    width: 95vw;
+                    height: 30vh;
+                }
+                img {
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                }
+                p {
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                    margin-right: 5vw;
+                }
+            }
+            @media screen and (orientation: landscape) {
+                p {
+                    padding-right: 20vw;
+                    padding-left: 20vw;
+                }
+            }
+        </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     </head>
     <body>
@@ -29,6 +52,9 @@
             </a>
             <div class="navbar-menu " id="navbarMenu">
                 <div class="navbar-end">
+                    <a class="navbar-item" href="./join.html">
+                        Join
+                    </a>
                     <a class="navbar-item" href="./bitcoin.html">
                         Bitcoin
                     </a>
@@ -57,10 +83,10 @@
             </div>
         </nav>
         <main class="has-text-centered">
-            <p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+            <p class="has-text-justified">
             </p>
             <!--Remember to separate videos and images from text by making a new p element-->
-            <p class="has-text-justified" style="margin-right: 20vw; margin-left: 20vw;">
+            <p class="has-text-justified">
                 <br />
                 <br />                
                     Our efforts are back by Bitcoin 1776. Our political, economic, and social philosophy is that of Bitcoin Coinism.
@@ -81,7 +107,7 @@
             </figure>
             <br />
             <br />
-            <section style="margin-right: 20vw; margin-left: 20vw;">
+            <section>
                 <iframe class="has-text-centered" width="560" height="315" src="https://www.youtube.com/embed/PQjeAZyL2_w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <br />
                 <br />
