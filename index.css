@@ -64,3 +64,30 @@ td:nth-child(even) {
 td:nth-child(odd) {
   background-color: #37a135;
 }
+.green {
+    border: solid 1px forestgreen; 
+    border-radius: 100px; 
+    margin: 10px;
+}
+.brown {
+    border: solid 1px brown; 
+    border-radius: 100px; 
+    margin: 10px;
+}
+.purple {
+    border: solid 1px purple; 
+    border-radius: 100px; 
+    margin: 10px;
+}
+
+.blue {
+    border: solid 1px navy; 
+    border-radius: 100px; 
+    margin: 10px;
+}
+
+.grey {
+    border: solid 1px grey; 
+    border-radius: 100px; 
+    margin: 10px;
+}
