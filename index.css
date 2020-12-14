@@ -45,3 +45,22 @@ html {
     }
 
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 300px;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: center;
+  padding: 0px;
+}
+
+td:nth-child(even) {
+  background-color: #37a135;
+}
+
+td:nth-child(odd) {
+  background-color: #37a135;
+}
