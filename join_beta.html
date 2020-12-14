@@ -195,21 +195,6 @@
             </p>
         </div>
             <br />
-<form method="POST"  action="https://btcpay.midnightdiscovery.org/api/v1/invoices" class="btcpay-form btcpay-form--block">
-  <input type="hidden" name="storeId" value="9qWydv9qT4ttGvq12PeQBbkKZ86X35k1zCKkWRUWVKwr" />
-  <input type="hidden" name="checkoutDesc" value="Tax Deductible Donation" />
-  <div class="btcpay-custom-container">
-    <input id="btcpay-input-price" name="price" type="text" min="0" max="none" step="any" value="20" style="width: 209px;" oninput="event.preventDefault();isNaN(event.target.value) || event.target.value <= 0 ? document.querySelector('#btcpay-input-price').value = 20 : event.target.value" onchange="document.querySelector('#btcpay-input-range').value = document.querySelector('#btcpay-input-price').value" />
-    <select name="currency">
-      <option value="USD" selected>USD</option>
-      <option value="GBP">GBP</option>
-      <option value="EUR">EUR</option>
-      <option value="BTC">BTC</option>
-    </select>
-    <input class="btcpay-input-range" id="btcpay-input-range" value="20" type="range" min="20" max="5000" step="20" style="width:209px;margin-bottom:15px;" oninput="document.querySelector('#btcpay-input-price').value = document.querySelector('#btcpay-input-range').value" />
-  </div>
-  <input type="image" class="submit" name="submit" src="https://btcpay.midnightdiscovery.org/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
-</form>
 
             </p>
             <br />
@@ -238,32 +223,7 @@
             <p class="has-text-centered is-bold spaced">jfk1quqp7pespfmq2ufsem34xcdqrnmgm7xtcetlnza</p>
             <br />
             <br />
-            <style type="text/css"> .btcpay-form { display: inline-flex; align-items: center; justify-content: center; } .btcpay-form--inline { flex-direction: row; } .btcpay-form--block { flex-direction: column; } .btcpay-form--inline .submit { margin-left: 15px; } .btcpay-form--block select { margin-bottom: 10px; } .btcpay-form .btcpay-custom { display: flex; align-items: center; justify-content: center; } .btcpay-form .plus-minus { cursor:pointer; font-size:25px; line-height: 25px; background: #DFE0E1; height: 30px; width: 45px; border:none; border-radius: 60px; margin: auto 5px; display: inline-flex; justify-content: center; } .btcpay-form select { -moz-appearance: none; -webkit-appearance: none; appearance: none; color: currentColor; background: transparent; border:1px solid transparent; display: block; padding: 1px; margin-left: auto; margin-right: auto; font-size: 11px; cursor: pointer; } .btcpay-form select:hover { border-color: #ccc; } #btcpay-input-price { -moz-appearance: none; -webkit-appearance: none; border: none; box-shadow: none; text-align: center; font-size: 25px; margin: auto; border-radius: 5px; line-height: 35px; background: #fff; } </style>
-            <form method="POST" action="https://btcpay.bitcoin1776.org/api/v1/invoices" class="btcpay-form btcpay-form--block">
-                <input type="hidden" name="storeId" value="5hPfaVTbqxpXa2Dyg6aX6inDbVeMvDVYd7jSufHN4hQe">
-                <input type="hidden" name="checkoutDesc" value="Bitcoin 1776 Donation">
-                <input type="hidden" name="notifyEmail" value="jfkbitcoin1776@gmail.com">
-                <div>
-                  <div class="btcpay-custom">
-                    <button class="plus-minus" onclick="event.preventDefault(); var price = parseInt(document.querySelector('#btcpay-input-price').value); if ('-' == '-' &amp;&amp; (price - 1) < 1) { return; } document.querySelector('#btcpay-input-price').value = parseInt(document.querySelector('#btcpay-input-price').value) - 1;">-</button>
-                    <input id="btcpay-input-price" name="price" type="text" min="1" max="500" step="20" value="20" style="width: 3em;" oninput="event.preventDefault();isNaN(event.target.value) || event.target.value <= 0 ? document.querySelector('#btcpay-input-price').value = 20 : event.target.value">
-                    <button class="plus-minus" onclick="event.preventDefault(); var price = parseInt(document.querySelector('#btcpay-input-price').value); if ('+' == '-' &amp;&amp; (price - 1) < 1) { return; } document.querySelector('#btcpay-input-price').value = parseInt(document.querySelector('#btcpay-input-price').value) + 1;">+</button>
-                  </div>
-                  <select name="currency">
-                    <option value="USD" selected="">USD</option>
-                    <option value="GBP">GBP</option>
-                    <option value="EUR">EUR</option>
-                    <option value="BTC">BTC</option>
-                  </select>
-                </div>
-                <input type="image" class="submit" name="submit" src="https://btcpay.bitcoin1776.org/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
-            </form>
-            <br />
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="hosted_button_id" value="5TJY8Y84BAS7Q" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-            </form>
+
         </main>
         <br />
         <br />
