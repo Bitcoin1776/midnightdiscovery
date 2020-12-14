@@ -65,29 +65,34 @@ td:nth-child(odd) {
   background-color: #37a135;
 }
 .green {
-    border: solid 1px forestgreen; 
+    border-right: solid 4.965243296921549vh forestgreen; 
+    border-left: solid 4.965243296921549vh forestgreen;
     border-radius: 100px; 
     margin: 10px;
 }
 .brown {
-    border: solid 1px brown; 
+    border-right: solid 4.965243296921549vh brown;
+    border-left: solid 4.965243296921549vh brown; 
     border-radius: 100px; 
     margin: 10px;
 }
 .purple {
-    border: solid 1px purple; 
+    border-right: solid 4.965243296921549vh purple; 
+    border-left: solid 4.965243296921549vh purple; 
     border-radius: 100px; 
     margin: 10px;
 }
 
 .blue {
-    border: solid 1px navy; 
+    border-left: solid 4.965243296921549vh navy; 
+    border-right: solid 4.965243296921549vh navy; 
     border-radius: 100px; 
     margin: 10px;
 }
 
 .grey {
-    border: solid 1px grey; 
+    border-left: solid 4.965243296921549vh grey; 
+    border-right: solid 4.965243296921549vh grey; 
     border-radius: 100px; 
     margin: 10px;
 }
