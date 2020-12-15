@@ -43,9 +43,9 @@ table {
     background-color: #37a135;
   }
   .green {
-      border-right: solid 4.965243296921549vh forestgreen; 
-      border-left: solid 4.965243296921549vh forestgreen;
-      border-radius: 100px; 
+      border-right: solid 1vh forestgreen; 
+      border-left: solid 1vh forestgreen;
+      border-radius: 0; 
       margin: 10px;
   }
   .brown {
