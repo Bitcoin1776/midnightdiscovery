@@ -43,8 +43,8 @@ table {
     background-color: #37a135;
   }
   .green {
-      border-right: solid 1vh forestgreen; 
-      border-left: solid 1vh forestgreen;
+      border-right: solid 3vh forestgreen; 
+      border-left: solid 3vh forestgreen;
       border-radius: 0; 
       margin: 10px;
   }
